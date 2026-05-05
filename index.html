@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video Player</title>
+
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:black; font-family:Arial,sans-serif; }
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    padding: 6px;
+    border-radius: 18px;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    border: none;
+}
+
+.button-area {
+    display:flex;
+    gap:10px;
+    padding:12px;
+}
+
+.btn {
+    flex:1;
+    padding:14px;
+    text-align:center;
+    text-decoration:none;
+    color:white;
+    border-radius:30px;
+    font-weight:bold;
+    font-size:14px;
+}
+
+.jepang { background:linear-gradient(45deg,#ff0000,#ff4d4d); }
+.indo   { background:linear-gradient(45deg,#00c853,#69f0ae); }
+.barat  { background:linear-gradient(45deg,#2196f3,#00e5ff); }
+</style>
+
+</head>
+<body>
+
+<div class="video-container">
+    <iframe id="videoFrame" src=""></iframe>
+</div>
+
+<div class="button-area">
+    <a class="btn jepang" href="https://incorporateunderstand.com/kfzdtudmfe?key=a02a0f97c924391fa381eda6d9601ed3" target="_blank">JEPANG</a>
+    <a class="btn indo" href="https://incorporateunderstand.com/kfzdtudmfe?key=a02a0f97c924391fa381eda6d9601ed3" target="_blank">INDO</a>
+    <a class="btn barat" href="https://omg10.com/4/6779277" target="_blank">BARAT</a>
+</div>
+
+<script>
+let path = window.location.pathname.replace("/", "");
+document.getElementById("videoFrame").src = "https://cdn2.videy.co/de44912a1.mp4" + path;
+</script>
+
+</body>
+</html>
